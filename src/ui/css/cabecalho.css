@@ -1,16 +1,15 @@
-.App-header {
+.cabecalho {
   background-color: #282c34;
   min-height: 5vh;
   display: flex;
   flex-direction: column;
   align-items: left;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
-  padding-left: 0.5vh;
 }
 
-.header-logo h2 {
+.cabecalho-logo {
   font-family: 'Consolas', 'Arial';
+  font-size: 2.5vh;
   text-align: center;
 }
