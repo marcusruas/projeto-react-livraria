@@ -1,27 +1,26 @@
-import React from 'react';
-import Cabecalho from './ui/app/cabecalho'
-
-import './ui/css/cabecalho.css';
-
+import React, { Component } from 'react';
 import { Layout } from 'antd';
 
-function App() {
-  const { Header, Footer, Sider, Content } = Layout;
+import Cabecalho from './ui/app/cabecalho';
 
-  return (
-    <div>
-      <Layout>
-        <Header>
-          <Cabecalho />
-        </Header>
+class App extends Component {
+  render() {
+    const { Header, Footer, Sider, Content } = Layout;
+    return (
+      <div>
         <Layout>
-          <Sider>MENU</Sider>
-          <Content>TELA</Content>
+          <Header>
+            <Cabecalho />
+          </Header>
+          <Layout>
+            <Sider>MENU</Sider>
+            <Content>TELA</Content>
+          </Layout>
+          <Footer>RODAPÉ</Footer>
         </Layout>
-        <Footer>RODAPÉ</Footer>
-      </Layout>
-    </div>
-  );
+      </div>
+    );
+  }
 }
 
 export default App;
